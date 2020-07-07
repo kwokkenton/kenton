@@ -9,18 +9,18 @@ body{
   font-family: "Open Sans", sans-serif;
   margin: 0px;
 }
-
+/* Text */
 h1, h2 {
   text-align: left;
   /*display: block;*/
-  color: #FFF;
   line-height: 1;
   font-family: 'Oswald', sans-serif;
-  margin: 0px;
+  margin: 50px 0px;
 }
 
 h1{
-  font-size: 280px;
+  font-size: 200px;
+  font-weight: lighter;
 }
 
 h1:hover{
@@ -29,18 +29,33 @@ h1:hover{
 
 h2{
   font-size: 180px;
-  padding: 100px 0px;
 }
 
+h3{
+  font-size: 30px;
+}
 
-.big {
-  padding: 100px 0px;
-  /*position: fixed;*/
+p {
+  text-align: left;
+}
+
+div.aspect{
+  background-color: #F76C6C;
+  width = 100%;
+  padding: 100px;
   margin: 0px;
-  display: inline-block;
 }
 
-/* Navigation Bar */
+#travel{
+  background-color: #24305E;
+}
+
+#contact{
+  background-color: #F8E9A1;
+  color: #24305E;
+}
+
+/* Navigation Bar and Footer*/
 nav, footer {
   width: 100%;
   background-color: #222;
@@ -54,10 +69,10 @@ nav {
 
 footer {
   bottom: 0;
-  position: fixed; }
+  position: fixed;
+  }
 
-
-ul {
+ul.bar{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -65,11 +80,8 @@ ul {
   overlow: hidden;
 }
 
-li{
+li a.navpt{
   float: left;
-}
-
-li a {
   display: block;
   color: white;
   text-align: center;
@@ -77,28 +89,37 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+li a.navpt:hover {
   background-color: #24305E;
 }
 
-/* Cover text */
+/* *********************/
+
+/* Splash **************/
+.splash {
+  padding: 100px;
+  margin: 0px;
+  display: grid;
+  grid-template-areas: "name pic";
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  overflow: scroll;
+}
+
+#name{
+  grid-area: name;
+}
+
 #coverpic {
   /*float: left; */
-  margin: 0;
-  padding: 150px 0px 100px 175px;
-  display: inline-block;
-  position: absolute;
-}
+  grid-area: pic;
 
-.text {
-  float: right;
 }
+/**************/
 
-.title{
+/* Travel table*/
+table, th, td {
+  border: 1px solid black;
   text-align: left;
-  padding: 30px;
 }
-
-p {
-  text-align: justify;
-}
+/**************/

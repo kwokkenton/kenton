@@ -8,28 +8,114 @@
   </head>
 
   <body>
-    <header>
+    <header id= "Home">
       <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./aboutme.html">About me</a></li>
-          <li><a href="">Photography</a></li>
-          <li><a href="./writing.html">Writing</a></li>
-          <li><a href="">Science and Tech</a></li>
+        <ul class="bar">
+          <li ><a href="#Home" class="navpt">Home</a></li>
+          <li ><a href="#scientist" class="navpt">Science</a></li>
+          <li ><a href="#travel" class="navpt">Travelling</a></li>
+          <li ><a href="#contact" class="navpt">Contact me</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class=big>
-      <h1>Kenton <br> Kwok···</h1>
+    <div class="splash">
+      <section id="name">
+        <h1>Kenton <br>
+          Kwok···
+        </h1>
+
+      </section>
+      <section id="coverpic">
+        <figure >
+          <img src="./media/profile.jpg" height="500px"/>
+        </figure>
+      </section>
     </div>
 
-    <figure id="coverpic">
-      <img src="./media/profile.jpg" height="500px"/>
-    </figure>
+    <div id = "scientist" class="aspect">
+      <h2>I am a scientist</h2>
+      <p> I  am a first year undergraduate physics student at Imperial College
+        London who lives and breathes the spirit of science. I deeply believe
+        that understanding the fundamentals of nature will open the path towards
+        inventing the future. </br>
+      My interests include</p>
+      <ul>
+        <li>Biophysics</li>
+        <li>Computational physics</li>
+        <li>Data science</li>
+        <li>Machine learning</li>
+      </ul>
+      <p>These are some selected projects of mine that I am particularly proud of!</p>
+      <ul>
+        <li>Analysing and Evaluating Variational Quantum Monte Carlo Methods
+        to determine the Ground State Energy of Helium</li>
+        <li>Construction of an Analogue Computer to simulate a Car Suspension</li>
+        <li>Shaking Away Catastrophe - An Investigation into the Pendulum Tuned
+          Mass Damper</li>
+      </ul>
+    </div>
+
+    <div id ="travel" class="aspect">
+      <h2> I am an explorer</h2>
+      <p> Wanderlust is in my blood. Appreciating new sights, sounds and
+        sensations (and sometimes getting lost in narrow streets) appeals to
+        my tendency to be curious and makes me feel at ease. I have currently
+      visited the following countries and territories: </p>
+
+      <table>
+        <thead>
+          <th>Continent</th>  <th>Regions (and cities)</th> </thead>
+        <tbody>
+          <tr>
+            <td> Asia (11)</td>
+            <td> Hong Kong <br>
+              Taiwan (Taipei, Taichung, Kaohshiung)<br>
+              China (Beijing, Shanghai Hangzhou, Foshan, Shenzhen)<br>
+              Macau <br>
+              Malaysia (Kuala Lumpur) <br>
+              Singapore <br>
+              Vietnam (Ho Chi Minh City)<br>
+              South Korea (Jeju) <br>
+              Thailand (Bangkok) <br>
+              Cambodia (Siem Reap)<br>
+              Japan (Tokyo, Nikko)</td>
+          </tr>
+          <td>Europe (13)</td>
+            <td> United Kingdom (London, Cambridge, Oxford, Birmingham, Lincoln) <br>
+              France (Paris)<br>
+              Spain (Barcelona, Madrid, Cordoba, Sevilla, Granada)<br>
+              Denmark (Copenhagen)<br>
+              Croatia (Zagreb, Dubrovnik, Split, Zadar)<br>
+              Serbia <br>
+              Bosnia and Herzegovnia <br>
+              Slovenia <br>
+              Montenegro <br>
+              Austria (Vienna, Salzburg, Hallstatt) <br>
+              Italy (Rome) <br>
+              The Vatican <br>
+              Netherlands (Amsterdam) <br>
+              </td>
+          <tr> <td>Oceania (1)</td>
+            <td> Australia (Sydney, Brisbane, Gold Coast)
+          </tr>
+
+          <tr> <td>Americas (0)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="contact" class="aspect">
+      <h2> Contact me</h2>
+      <form>
+        Name: <input type=text name="name"> <br>
+        Email: <input type=text name"email"> <br>
+        Message here: <input type=text name="message" >
+      </form>
+    </div>
 
     <footer>
-      © Kenton Kwok 2020 | This website is one of my HTML/CSS projects, written by myself. 
+      © Kenton Kwok 2020 | This website is one of my HTML/CSS projects, written by myself.
     </footer>
   </body>
 <html>
