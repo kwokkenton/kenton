@@ -1,0 +1,138 @@
+
+header{
+  display: block;
+}
+
+body{
+  background-color:  #A8D0E6;
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+}
+
+/* Text */
+h1, h2 {
+  text-align: left;
+  /*display: block;*/
+  line-height: 1;
+  font-family: 'Oswald', sans-serif;
+  margin: 50px 0px;
+}
+
+h1{
+  font-size: 200px;
+  font-weight: lighter;
+}
+
+h1:hover{
+  color: #F76C6C;
+}
+
+h2{
+  font-size: 180px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+p {
+  text-align: left;
+}
+
+div.aspect{
+  background-color: #F76C6C;
+  width = 100%;
+  padding: 100px;
+  margin: 0px;
+}
+
+#travel{
+  background-color: #24305E;
+}
+
+#contact{
+  background-color: #F8E9A1;
+  color: #24305E;
+}
+
+/* Navigation Bar and Footer*/
+nav, footer {
+  width: 100%;
+  background-color: #222;
+  opacity: .9;
+}
+
+nav {
+  text-align: center;
+  position: fixed;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  padding: 5px;
+}
+
+ul.bar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overlow: hidden;
+}
+
+li a.navpt{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.navpt:hover {
+  background-color: #24305E;
+}
+/* *********************/
+
+/* Splash **************/
+.splash {
+  padding: 100px;
+  margin: 0px;
+  display: grid;
+
+
+
+  grid-template-areas: "name pic";
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  overflow: scroll;
+}
+
+#about{
+  background-image: url(./media/background.jpg);
+  background-size: initial;
+  background-color: #888;
+  background-position: right center;
+}
+
+#name{
+  grid-area: name;
+  /*background-color: rgba(136,136,136,.5);*/
+  height: 100%;
+}
+
+#coverpic {
+  /*float: left; */
+  grid-area: pic;
+
+}
+/**************/
+
+/* Travel table*/
+table, th, td {
+  border: 1px solid black;
+  text-align: left;
+}
+/**************/

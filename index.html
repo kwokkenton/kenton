@@ -1,121 +1,57 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <title>Kenton Kwok</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
   </head>
 
-  <body>
-    <header id= "Home">
-      <nav>
-        <ul class="bar">
-          <li ><a href="#Home" class="navpt">Home</a></li>
-          <li ><a href="#scientist" class="navpt">Science</a></li>
-          <li ><a href="#travel" class="navpt">Travelling</a></li>
-          <li ><a href="#contact" class="navpt">Contact me</a></li>
-        </ul>
-      </nav>
+    <body class="text-center">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">Kenton Kwok</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link active" href="#">Home</a>
+
+          <a class="nav-link" href="./travel.html">Travel</a>
+          <a class="nav-link" href="#">Photography</a>
+          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="./about.html">About</a>
+        </nav>
+      </div>
     </header>
 
-    <div class="splash">
-      <section id="name">
-        <h1>Kenton <br>
-          Kwok···
-        </h1>
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">Traveller, photographer, scientist and technology enthusiast.</h1>
+      <p class="lead">Welcome to my personal site!</p>
+      <p class="lead">
+        <a href="./about.html" class="btn btn-lg btn-secondary">About me</a>
+      </p>
+    </main>
 
-      </section>
-      <section id="coverpic">
-        <figure >
-          <img src="./media/profile.jpg" height="500px"/>
-        </figure>
-      </section>
-    </div>
-
-    <div id = "scientist" class="aspect">
-      <h2>I am a scientist</h2>
-      <p> I  am a first year undergraduate physics student at Imperial College
-        London who lives and breathes the spirit of science. I deeply believe
-        that understanding the fundamentals of nature will open the path towards
-        inventing the future. </br>
-      My interests include</p>
-      <ul>
-        <li>Biophysics</li>
-        <li>Computational physics</li>
-        <li>Data science</li>
-        <li>Machine learning</li>
-      </ul>
-      <p>These are some selected projects of mine that I am particularly proud of!</p>
-      <ul>
-        <li>Analysing and Evaluating Variational Quantum Monte Carlo Methods
-        to determine the Ground State Energy of Helium</li>
-        <li>Construction of an Analogue Computer to simulate a Car Suspension</li>
-        <li>Shaking Away Catastrophe - An Investigation into the Pendulum Tuned
-          Mass Damper</li>
-      </ul>
-    </div>
-
-    <div id ="travel" class="aspect">
-      <h2> I am an explorer</h2>
-      <p> Wanderlust is in my blood. Appreciating new sights, sounds and
-        sensations (and sometimes getting lost in narrow streets) appeals to
-        my tendency to be curious and makes me feel at ease. I have currently
-      visited the following countries and territories: </p>
-
-      <table>
-        <thead>
-          <th>Continent</th>  <th>Regions (and cities)</th> </thead>
-        <tbody>
-          <tr>
-            <td> Asia (11)</td>
-            <td> Hong Kong <br>
-              Taiwan (Taipei, Taichung, Kaohshiung)<br>
-              China (Beijing, Shanghai Hangzhou, Foshan, Shenzhen)<br>
-              Macau <br>
-              Malaysia (Kuala Lumpur) <br>
-              Singapore <br>
-              Vietnam (Ho Chi Minh City)<br>
-              South Korea (Jeju) <br>
-              Thailand (Bangkok) <br>
-              Cambodia (Siem Reap)<br>
-              Japan (Tokyo, Nikko)</td>
-          </tr>
-          <td>Europe (13)</td>
-            <td> United Kingdom (London, Cambridge, Oxford, Birmingham, Lincoln) <br>
-              France (Paris)<br>
-              Spain (Barcelona, Madrid, Cordoba, Sevilla, Granada)<br>
-              Denmark (Copenhagen)<br>
-              Croatia (Zagreb, Dubrovnik, Split, Zadar)<br>
-              Serbia <br>
-              Bosnia and Herzegovnia <br>
-              Slovenia <br>
-              Montenegro <br>
-              Austria (Vienna, Salzburg, Hallstatt) <br>
-              Italy (Rome) <br>
-              The Vatican <br>
-              Netherlands (Amsterdam) <br>
-              </td>
-          <tr> <td>Oceania (1)</td>
-            <td> Australia (Sydney, Brisbane, Gold Coast)
-          </tr>
-
-          <tr> <td>Americas (0)</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div id="contact" class="aspect">
-      <h2> Contact me</h2>
-      <form>
-        Name: <input type=text name="name"> <br>
-        Email: <input type=text name"email"> <br>
-        Message here: <input type=text name="message" >
-      </form>
-    </div>
-
-    <footer>
-      © Kenton Kwok 2020 | This website is one of my HTML/CSS projects, written by myself.
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>Made with HTML, CSS and Bootstrap. Copyright Kenton Kwok 2020.</p>
+      </div>
     </footer>
   </body>
-<html>
+
+
+</html>

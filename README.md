@@ -1,2 +1,0 @@
-# kenton
- about me!
