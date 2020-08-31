@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Kenton Kwok">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Community Testing | Kenton Kwok</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="icon" type="image/ico" href="favicon.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar justify-content-center navbar-dark fixed-top bg-dark">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand text-center">Kenton Kwok</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./travel.html">Travel</a>
+          <a class="nav-link" href="./photography.html">Photography</a>
+          <a class="nav-link active" href="./projects.html">Projects</a>
+          <a class="nav-link" href="./blog.html">Blog</a>
+          <a class="nav-link" href="./about.html">About</a>
+        </nav>
+      </div>
+    </header>
+  </nav>
+
+
+
+  <main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="layer">
+      <div class="jumbotron splash" style="background-image: url(./media/projects/community/bg.jpg);">
+        <div class="container">
+          <div class="col-lg-10 col-md-12 mx-auto py-auto">
+            <h1 class="display-3 mt-5 ">HK Community Testing 🇭🇰</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-md-12 mx-auto">
+          <h2>Aim</h2>
+          <p class="lead">The Universal Community Testing Scheme for COVID-19 in Hong Kong is planned to roll out on 1 September 2020. It is a voluntary scheme, funded by the Central People's Government of China with the goal of detecting
+            asymptomatic carriers in
+            the community. However, it has come under much scrutiny from the public, some medical professionals and politicians because of concerns relating to test effectiveness, cost effectiveness data security and privacy. </p>
+          <p>This page collates data from news sources and transforms it into a time plot of the number of sign-ups for the programme, which allows us to look at the raw number of sign ups and its rate of growth over time. The government claims that
+            it does not have expectations for a certain number of people to join the programme,
+            though it is well understood that if the tests were not prevalent amongst the community, the scheme would virtually be unsuccessful in reaching its goals. The plots below thus can serve as good visualisations of whether the government
+            scheme will be successful or not.</p>
+          <p>According to
+            <a
+              src="https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/508334/%E5%85%A8%E6%B0%91%E6%AA%A2%E6%B8%AC-%E6%B8%AF%E5%BA%9C%E4%BC%B0%E7%AE%97%E9%A6%99%E6%B8%AF%E6%9C%891500%E9%9A%B1%E5%BD%A2%E6%82%A3%E8%80%85-%E5%B0%88%E5%AE%B6-%E5%8A%A0%E5%BF%AB%E6%AA%A2%E6%B8%AC%E5%86%80%E6%8E%A7%E7%96%AB%E6%83%85">
+              this HK01 News Article</a>, the government has previously found 0.04% of people (during testing specific high risk groups) test positive. Chief Executive Carrie Lam expects 1500 asymptomatic carriers to be amongst the 7.4 million
+            residents of Hong Kong. However Professor David Hui of the Chinese Univeristy of Hong Kong correctly pointed out that this is a biased sample and the true prevalence of positive cases in the community would be less. Adding on the fact
+            that many of this asymptomatic carriers do not pose a transmission risk, he doubts that the Scheme will be successful.
+          </p>
+          <p><a class="btn btn-primary btn-lg" href="https://www.communitytest.gov.hk/" role="button">Government Website &raquo;</a></p>
+          <br>
+          <h2>Plots</h2>
+          <!-- 16:9 aspect ratio -->
+          <h3>Sign up data</h3>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="./media/projects/community/testing.html"></iframe>
+          </div>
+          <h3>Processed rate data</h3>
+          Using first order difference derivative.
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="./media/projects/community/rate.html"></iframe>
+          </div>
+          Made using Python (Pandas, Plotly).
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <hr>
+
+  <footer class="container">
+    <p class="justify-content-center text-center"> Made with HTML, CSS and Bootstrap. &copy; Kenton Kwok 2020.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+  </script>
+  <script src="../assets/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
