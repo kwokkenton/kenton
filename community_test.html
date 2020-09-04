@@ -78,13 +78,14 @@
           <p class="lead">The Universal Community Testing Scheme for COVID-19 in Hong Kong is planned to roll out on 1 September 2020. It is a voluntary scheme, funded by the Central People's Government of China with the goal of detecting
             asymptomatic carriers in
             the community. However, it has come under much scrutiny from the public, some medical professionals and politicians because of concerns relating to test effectiveness, cost effectiveness data security and privacy. </p>
-          <p>This page collates data from news sources and transforms it into a time plot of the number of sign-ups for the programme, which allows us to look at the raw number of sign ups and its rate of growth over time. The government claims that
+          <p>This page collates data from news sources and transforms it into a time plot of the number of sign-ups for the programme, which allows us to look at the raw number of sign ups and its rate of growth over time. As the government (and news
+            sources) does not openly publish a dashboard for the collated data, this page would be helpful for those hoping to visualise and understand the trend around sampling and testing for this programme. The government claims that
             it does not have expectations for a certain number of people to join the programme,
             though it is well understood that if the tests were not prevalent amongst the community, the scheme would virtually be unsuccessful in reaching its goals. The plots below thus can serve as good visualisations of whether the government
             scheme will be successful or not.</p>
           <p>According to
             <a
-              src="https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/508334/%E5%85%A8%E6%B0%91%E6%AA%A2%E6%B8%AC-%E6%B8%AF%E5%BA%9C%E4%BC%B0%E7%AE%97%E9%A6%99%E6%B8%AF%E6%9C%891500%E9%9A%B1%E5%BD%A2%E6%82%A3%E8%80%85-%E5%B0%88%E5%AE%B6-%E5%8A%A0%E5%BF%AB%E6%AA%A2%E6%B8%AC%E5%86%80%E6%8E%A7%E7%96%AB%E6%83%85">
+              href="https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/508334/%E5%85%A8%E6%B0%91%E6%AA%A2%E6%B8%AC-%E6%B8%AF%E5%BA%9C%E4%BC%B0%E7%AE%97%E9%A6%99%E6%B8%AF%E6%9C%891500%E9%9A%B1%E5%BD%A2%E6%82%A3%E8%80%85-%E5%B0%88%E5%AE%B6-%E5%8A%A0%E5%BF%AB%E6%AA%A2%E6%B8%AC%E5%86%80%E6%8E%A7%E7%96%AB%E6%83%85">
               this HK01 News Article</a>, the government has previously found 0.04% of people (during testing specific high risk groups) test positive. Chief Executive Carrie Lam expects 1500 asymptomatic carriers to be amongst the 7.4 million
             residents of Hong Kong. However Professor David Hui of the Chinese Univeristy of Hong Kong correctly pointed out that this is a biased sample and the true prevalence of positive cases in the community would be less. Adding on the fact
             that many of this asymptomatic carriers do not pose a transmission risk, he doubts that the Scheme will be successful.
@@ -92,17 +93,25 @@
           <p><a class="btn btn-primary btn-lg" href="https://www.communitytest.gov.hk/" role="button">Government Website &raquo;</a></p>
           <br>
           <h2>Plots</h2>
+          <h3>Pie chart</h3>
+          I used the sign up rate because it is currently the most indicative of the final result.
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="./media/projects/community/pie.html"></iframe>
+          </div>
           <!-- 16:9 aspect ratio -->
           <h3>Sign up data</h3>
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="./media/projects/community/testing.html"></iframe>
           </div>
           <h3>Processed rate data</h3>
-          Using first order difference derivative.
+          Using first order difference derivative, I computed the various interpolated hourly rates related to the sign ups, sampling and testing. I also included the promised testing rate (50k per day) by the contracted testing organisation(s). We
+          can see that the current testing rate is not even close to the promised rate, as the testing data points are far below the horizontal line. <br>
+
+          Observably, there is an oscillatory exponential decay in the number of sign-ups.
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="./media/projects/community/rate.html"></iframe>
           </div>
-          Made using Python (Pandas, Plotly).
+          Made using Python (Pandas, Plotly), best viewed on desktop.
         </div>
       </div>
     </div>
